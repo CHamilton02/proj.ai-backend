@@ -4,11 +4,13 @@
   "description": "Backend for proj.ai",
   "main": "index.js",
   "scripts": {
+    "start": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Camdyn Hamilton",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
   }
 }
