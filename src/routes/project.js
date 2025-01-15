@@ -1,16 +1,10 @@
 import express from "express";
 import OpenAI from "openai";
 import { zodResponseFormat } from "openai/helpers/zod";
-import { z } from "zod";
+import { Project } from "../models/Project";
 
 const router = express.Router();
 const openai = new OpenAI();
-
-const Project = z.object({
-  title: z.string(),
-  description: z.string(),
-  tips: z.array(z.string()),
-});
 
 router.post("/generate", async (req, res) => {
   const completion = await openai.chat.completions.create({
