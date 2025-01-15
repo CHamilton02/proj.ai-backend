@@ -26,7 +26,7 @@ router.post("/generate", async (req, res) => {
         content: `Topics: ${req.body.topics}, Difficulty: ${req.body.difficulty}`,
       },
     ],
-    response_format: zodResponseFormat(Project, "event"),
+    response_format: zodResponseFormat(Project, "project"),
   });
 
   res.send(completion.choices[0].message.content);
