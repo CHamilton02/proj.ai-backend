@@ -1,7 +1,8 @@
-const express = require("express");
+import express from "express";
+import project from "./src/routes/project.js";
+
 const app = express();
 const port = 8080;
-const project = require("./src/routes/project");
 
 app.use(express.json());
 
