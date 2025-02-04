@@ -10,10 +10,16 @@
   "author": "Camdyn Hamilton",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
     "openai": "^4.78.1",
     "zod": "^3.24.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  }
 }
