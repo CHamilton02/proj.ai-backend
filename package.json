@@ -4,7 +4,9 @@
   "description": "Backend for proj.ai",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon",
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Camdyn Hamilton",
@@ -12,14 +14,15 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "nodemon": "^3.1.9",
     "openai": "^4.78.1",
     "zod": "^3.24.1"
   },
   "type": "module",
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.1",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   }
 }
