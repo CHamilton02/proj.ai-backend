@@ -4,7 +4,7 @@
   "description": "Backend for proj.ai",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "npm install && npx tsc",
     "start": "node dist/index.js",
     "dev": "npx tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "openai": "^4.78.1",
+    "typescript": "^5.7.3",
     "zod": "^3.24.1"
   },
   "type": "module",
@@ -22,7 +23,6 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.1",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.3"
+    "tsx": "^4.19.2"
   }
 }
